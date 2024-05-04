@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/js/uikit-icons.min.js"></script>
+    <style>
+        .custom-navbar {
+            background-color: #f6ff00 !important;
+        }
+
+        .custom-logo-img {
+            width: 70px;
+            height: 70px;
+        }
+        .custom-logo {
+            color: #0a17ff !important; 
+            font-size: 50px !important; /* Verändere die Größe des Logos */
+        }
+
+        .custom-menu-item {
+            color: #0a17ff !important; 
+            font-size: 20px !important;
+        }
+
+        .navbar-spacer {
+            margin-right: auto;
+        }
+
+        .roulette-images {
+            display: flex;
+            position: relative;
+            width: 100%; /* oder Ihre bevorzugte Breite */
+            height: 500px; /* oder Ihre bevorzugte Höhe */
+            overflow: hidden; /* Damit nur ein Bild sichtbar ist */
+        }
+
+        .roulette-images img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%; /* Bilder nehmen die volle Breite des Containers ein */
+            height: auto;
+        }
+
+        .hide {
+            z-index: 2;
+            animation: slideOut 1s ease;
+        }
+
+        .show {
+            z-index: 5;
+            animation: slideIn 1s ease;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(100%); /* Startposition des Bildes (rechts außerhalb des Containers) */
+            }
+            100% {
+                transform: translateX(0%); /* Startposition des Bildes (rechts außerhalb des Containers) */
+            }
+        }
+
+        @keyframes slideOut {
+            0% {
+                transform: translateX(0%); /* Startposition des Bildes (rechts außerhalb des Containers) */
+            }
+            100% {
+                transform: translateX(-100%); /* Startposition des Bildes (rechts außerhalb des Containers) */
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="uk-card uk-card-default uk-flex uk-navbar-container custom-navbar">
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <a class="uk-navbar-item navbar-spacer" href="#"></a>
+                <a class="uk-navbar-item uk-logo custom-logo" href="#">
+                    <img class="custom-logo-img" src="img/huepfburg_bearbeitet.png">
+                    Hüpfhelden
+                </a>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li><a class="custom-menu-item" href="#">Home</a></li>
+                <li><a class="custom-menu-item" href="#tutorials">Tutorials</a></li>
+                <li><a class="custom-menu-item" href="#contact">Kontakt</a></li>
+                <li></li><a class="uk-navbar-item navbar-spacer"></a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="roulette-container">
+        <div class="roulette-images">
+            <img src="img/IMG_1693.JPG" alt="Bild 1">
+            <img src="img/IMG_1819.JPG" alt="Bild 2">
+            <img src="img/IMG_1768.JPG" alt="Bild 3">
+            <!-- Weitere Bilder hier -->
+        </div>
+    </div>
+    <!--
+    <div class="uk-height-large uk-background-cover uk-background-center-center" style="background-image: url('img/background.jpg');">
+        
+    </div>
+    -->
+
+    <script>
+        
+    </script>
+</body>
+</html>
