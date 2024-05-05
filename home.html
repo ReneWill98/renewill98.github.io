@@ -14,12 +14,19 @@
         }
 
         .custom-logo-img {
-            width: 70px;
-            height: 70px;
+            width: 100px;
+            height: 100px;
         }
         .custom-logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
             color: #0a17ff !important; 
-            font-size: 50px !important; /* Verändere die Größe des Logos */
+        }
+
+        .custom-website-name {
+            color: #0a17ff !important; 
+            font-size: 50px !important;
         }
 
         .custom-menu-item {
@@ -28,7 +35,7 @@
         }
 
         .navbar-spacer {
-            margin-right: auto;
+            margin-right: 110px;
         }
 
         .roulette-images {
@@ -77,27 +84,25 @@
     </style>
 </head>
 <body>
-    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; end: + *; offset: 80">
-        <nav class="uk-card uk-card-default uk-flex uk-navbar-container custom-navbar">
-            <div class="uk-navbar-left">
-                <ul class="uk-navbar-nav">
-                    <a class="uk-navbar-item navbar-spacer" href="#"></a>
-                    <a class="uk-navbar-item uk-logo custom-logo" href="#">
-                        <img class="custom-logo-img" src="img/huepfburg_bearbeitet.png">
-                        Hüpfhelden
-                    </a>
-                </ul>
-            </div>
-            <div class="uk-navbar-right">
-                <ul class="uk-navbar-nav">
-                    <li><a class="custom-menu-item" href="#">Home</a></li>
-                    <li><a class="custom-menu-item" href="#tutorials">Tutorials</a></li>
-                    <li><a class="custom-menu-item" href="#contact">Kontakt</a></li>
-                    <li></li><a class="uk-navbar-item navbar-spacer"></a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+    <nav class="uk-card uk-card-default uk-flex uk-navbar-container custom-navbar" style="position: sticky; top: 0; z-index: 1000;">
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <a class="uk-navbar-item navbar-spacer" href="#"></a>
+                <a class="uk-navbar-item uk-logo custom-logo" href="#">
+                    <img class="custom-logo-img" src="img/huepfburg_bearbeitet.png">
+                </a>
+                <li><a class="custom-website-name uk-visible@m" href="#">Hüpfhelden</a></li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <!-- <li><a class="custom-menu-item" href="#">Home</a></li> -->
+                <li><a class="custom-menu-item" href="#tutorials">Tutorials</a></li>
+                <li><a class="custom-menu-item" href="#contact" style="margin-right: 50px;">Kontakt</a></li>
+                <!-- <li></li><a class="uk-navbar-item navbar-spacer"></a></li> -->
+            </ul>
+        </div>
+    </nav>
     
     <div class="roulette-container">
         <div class="roulette-images">
