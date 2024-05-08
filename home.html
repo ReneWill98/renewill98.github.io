@@ -84,23 +84,45 @@
     </style>
 </head>
 <body>
-    <nav class="uk-card uk-card-default uk-flex uk-navbar-container custom-navbar" style="position: sticky; top: 0; z-index: 1000;">
+    <nav class="uk-card uk-card-default uk-flex uk-navbar-container custom-navbar" style="position: sticky; top: 0; z-index: 10;">
         <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
                 <a class="uk-navbar-item navbar-spacer" href="#"></a>
                 <a class="uk-navbar-item uk-logo custom-logo" href="#">
                     <img class="custom-logo-img" src="img/huepfburg_bearbeitet.png">
                 </a>
-                <li><a class="custom-website-name uk-visible@m" href="#">Hüpfhelden</a></li>
+                <li><a class="custom-website-name uk-visible@s" href="#">Hüpfhelden</a></li>
             </ul>
         </div>
-        <div class="uk-navbar-right">
+        <div class="uk-navbar-right uk-visible@s">
             <ul class="uk-navbar-nav">
                 <!-- <li><a class="custom-menu-item" href="#">Home</a></li> -->
                 <li><a class="custom-menu-item" href="#tutorials">Tutorials</a></li>
                 <li><a class="custom-menu-item" href="#contact" style="margin-right: 50px;">Kontakt</a></li>
                 <!-- <li></li><a class="uk-navbar-item navbar-spacer"></a></li> -->
             </ul>
+        </div>
+        <div class="uk-navbar-right uk-hidden@s">
+            <a class="uk-navbar-toggle uk-icon uk-navbar-toggle-icon" uk-toggle="target: #offcanvas-nav" style="margin-right: 50px; color: #0a17ff;" href="#">
+                <svg width="40" height="30" viewBox="0 0 20 20">
+                    <rect width="20" height="2" y="3" class="line-1"></rect>
+                    <rect width="20" height="2" y="9" class="line-2"></rect>
+                    <rect width="20" height="2" y="15" class="line-3"></rect>
+                </svg>
+            </a>
+        </div>
+        
+        <div id="offcanvas-nav" uk-offcanvas style="z-index: 20;">
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-nav-header">Menü</li>
+                    <li><a href="#">Reiter 1</a></li>
+                    <li><a href="#">Reiter 2</a></li>
+                    <li><a href="#">Reiter 3</a></li>
+                    <!-- Weitere Reiter hier -->
+                </ul>
+        
+            </div>
         </div>
     </nav>
     
