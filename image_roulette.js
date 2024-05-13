@@ -15,7 +15,7 @@
                     images[(index + 1) % images.length].classList.remove('hide');
                     images[(index + 1) % images.length].classList.add('hidden');
                 }
-            }, 3000); // Ändere die Zeit in Millisekunden nach Bedarf (hier 3000ms = 3 Sekunden)
+            }, 5000); // Ändere die Zeit in Millisekunden nach Bedarf (hier 3000ms = 3 Sekunden)
         });
     });
 })();
