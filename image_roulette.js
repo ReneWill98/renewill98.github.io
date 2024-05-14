@@ -2,9 +2,11 @@
     console.log("image_roulette.js import"); // Konsolenausgabe hinzufügen
     // Ihr JavaScript-Code hier
     document.addEventListener('DOMContentLoaded', function() {
+       
         window.addEventListener('load', function() {
             var images = document.querySelectorAll('.roulette-images img');
             var index = 0;
+            
             var interval = setInterval(function () {
                 images[index].classList.remove('show');
                 images[index].classList.add('hide');
