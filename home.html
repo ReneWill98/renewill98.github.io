@@ -59,6 +59,13 @@
         .navbar-spacer {
             margin-right: 110px;
         }
+        .roulette-container{
+           
+            display: flex; /* Macht den Container zu einem Flex-Container */
+            justify-content: center; /* Zentriert die Kinder horizontal */
+            align-items: center; /* Zentriert die Kinder vertikal */
+    
+        }
 
         .roulette-images {
             display: flex;
@@ -68,23 +75,99 @@
             overflow: hidden; /* Damit nur ein Bild sichtbar ist */
         }
 
+
+
         .roulette-images img {
             position: absolute;
-            top: 0;
-            right: 0;
-            width: 100%; /* Bilder nehmen die volle Breite des Containers ein */
-            height: auto;
+            top: 0 ;
+            left: 34% ;
+            width: 34% ; /* Bilder nehmen die volle Breite des Containers ein */
+            height: auto ;
+        }
+        @media screen and (max-width: 640px) {
+            .roulette-images > img {
+            position: absolute ;
+            top: 0 ;
+            left: 100% !important ;
+            width: 100% !important; /* Bilder nehmen die volle Breite des Containers ein */
+            height: auto ;
         }
 
+        }
+
+      
         .hide {
             z-index: 2 !important;
             animation: slideOut 2s ease;
         }
 
         .show {
+           
             z-index: 5 !important;
             animation: slideIn 2s ease;
         }
+
+        .show-1{
+            z-index: 5 !important;
+            transform: translateX(100%);
+
+            animation: slideIn1 2s ease;
+        }
+        .show-2{
+            z-index: 5 !important;
+            transform: translateX(0%);
+
+            animation: slideIn2 2s ease;
+        }
+        .show-3{
+            z-index: 5 !important;
+            transform: translateX(-100%);
+
+            animation: slideIn3 2s ease;
+        }
+        .show-4 {
+            z-index: 5 !important;
+            transform: translateX(-200%);
+
+            animation: slideIn4 2s ease;
+        }
+
+        @keyframes slideIn1 {
+            0% {
+                transform: translateX(200%); /* Startposition des Bildes (rechts außerhalb des Containers) */
+            }
+            100% {
+                transform: translateX(100%); /* Startposition des Bildes (rechts außerhalb des Containers) */
+            }
+        }
+
+        @keyframes slideIn2 {
+            0% {
+                transform: translateX(100%); /* Startposition des Bildes (rechts außerhalb des Containers) */
+            }
+            100% {
+                transform: translateX(0%); /* Startposition des Bildes (rechts außerhalb des Containers) */
+            }
+        }
+        @keyframes slideIn3 {
+            0% {
+                transform: translateX(0%); /* Startposition des Bildes (rechts außerhalb des Containers) */
+            }
+            100% {
+                transform: translateX(-100%); /* Startposition des Bildes (rechts außerhalb des Containers) */
+            }
+        }
+
+        @keyframes slideIn4{
+            
+            0% {
+                transform: translateX(-100%); /* Startposition des Bildes (rechts außerhalb des Containers) */
+            }
+            100% {
+                transform: translateX(-200%); /* Startposition des Bildes (rechts außerhalb des Containers) */
+            }
+        }
+
         
 
         @keyframes slideIn {
@@ -145,11 +228,23 @@
     
     <div class="roulette-container">
         <div class="roulette-images">
+           
+           
+              
+          
+      
+        
+            
+
+           
             <img src="img/IMG_1693.JPG" alt="Bild 1" style="filter: brightness(120%); z-index: 1 ;">
             <img src="img/IMG_1819.JPG" alt="Bild 2" style="filter: brightness(180%);">
             <img src="img/IMG_1768.JPG" alt="Bild 3" style="filter: brightness(120%);">
-            <!-- Weitere Bilder hier -->
-        </div>
+            <img src="img/IMG_1693.JPG" alt="Bild 1" style="filter: brightness(120%);">
+          
+      
+        
+    </div>
     </div>
     <!--
     <div class="uk-height-large uk-background-cover uk-background-center-center" style="background-image: url('img/background.jpg');">
