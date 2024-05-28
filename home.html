@@ -60,6 +60,9 @@
             margin-right: 110px;
         }
         .roulette-container{
+            
+            width: 100%;
+
            
             display: flex; /* Macht den Container zu einem Flex-Container */
             justify-content: center; /* Zentriert die Kinder horizontal */
@@ -71,8 +74,11 @@
             display: flex;
             position: relative;
             width: 100%; /* oder Ihre bevorzugte Breite */
-            height: 700px; /* oder Ihre bevorzugte Höhe */
-            overflow: hidden; /* Damit nur ein Bild sichtbar ist */
+             /* oder Ihre bevorzugte Höhe */
+            background-color: #202020;
+            overflow: hidden;
+            aspect-ratio: 4.5/1;
+           
         }
 
 
@@ -88,49 +94,77 @@
             .roulette-images > img {
             position: absolute ;
             top: 0 ;
-            left: 100% !important ;
+            left: 0% !important ;
             width: 100% !important; /* Bilder nehmen die volle Breite des Containers ein */
             height: auto ;
+            
+
+        }
+        .roulette-images {
+            aspect-ratio: 1.5/1 !important;
         }
 
         }
 
       
-        .hide {
-            z-index: 2 !important;
-            animation: slideOut 2s ease;
-        }
-
-        .show {
-           
-            z-index: 5 !important;
-            animation: slideIn 2s ease;
-        }
+      
 
         .show-1{
             z-index: 5 !important;
             transform: translateX(100%);
-
+            filter: blur(10px) !important;
             animation: slideIn1 2s ease;
+            
         }
         .show-2{
             z-index: 5 !important;
+            filter: blur(0px);
             transform: translateX(0%);
-
-            animation: slideIn2 2s ease;
+            
+            animation: slideIn2 2s ease, blurOFF 2s ease;
+        
         }
         .show-3{
             z-index: 5 !important;
+            
             transform: translateX(-100%);
-
-            animation: slideIn3 2s ease;
+            animation: slideIn3 2s ease, blurON 2s ease;
+            filter: blur(10px);
+           
         }
         .show-4 {
             z-index: 5 !important;
             transform: translateX(-200%);
-
             animation: slideIn4 2s ease;
+            filter: blur(10px) !important;
         }
+        .start-right {
+            transform: translateX(100%);
+        }
+        .start-left {
+            transform: translateX(-100%);
+        }
+
+        @keyframes blurON {
+            0% {
+                filter: blur(0px); /* Startposition des Bildes (rechts außerhalb des Containers) */
+            }
+            100% {
+                filter: blur(10px); /* Startposition des Bildes (rechts außerhalb des Containers) */
+            }
+        }
+
+        @keyframes blurOFF {
+            0% {
+                filter: blur(10px); /* Startposition des Bildes (rechts außerhalb des Containers) */
+            }
+            100% {
+                filter: blur(0px); /* Startposition des Bildes (rechts außerhalb des Containers) */
+            }
+        }
+
+
+        
 
         @keyframes slideIn1 {
             0% {
@@ -144,17 +178,21 @@
         @keyframes slideIn2 {
             0% {
                 transform: translateX(100%); /* Startposition des Bildes (rechts außerhalb des Containers) */
+               
             }
             100% {
                 transform: translateX(0%); /* Startposition des Bildes (rechts außerhalb des Containers) */
+               
             }
         }
         @keyframes slideIn3 {
             0% {
                 transform: translateX(0%); /* Startposition des Bildes (rechts außerhalb des Containers) */
+                
             }
             100% {
                 transform: translateX(-100%); /* Startposition des Bildes (rechts außerhalb des Containers) */
+              
             }
         }
 
@@ -228,22 +266,12 @@
     
     <div class="roulette-container">
         <div class="roulette-images">
-           
-           
-              
+         
+            <img src="img/optimized/IMG_1693.webp" alt="Bild 1">
+            <img class="start start-right" src="img/optimized/IMG_1768.webp" alt="Bild 2" >
+            <img class="start start-middle"src="img/optimized/IMG_1819.webp" alt="Bild 3">
+            <img class="start start-left" src="img/optimized/IMG_1768.webp" alt="Bild 1">
           
-      
-        
-            
-
-           
-            <img src="img/optimized/IMG_1693.webp" alt="Bild 1" style="filter: brightness(120%); z-index: 1 ;">
-            <img src="img/optimized/IMG_1768.webp" alt="Bild 2" style="filter: brightness(180%);">
-            <img src="img/optimized/IMG_1819.webp" alt="Bild 3" style="filter: brightness(120%);">
-            <img src="img/optimized/IMG_1768.webp" alt="Bild 1" style="filter: brightness(120%);">
-          
-      
-        
     </div>
     </div>
     <!--
@@ -251,7 +279,10 @@
         
     </div>
     -->
+    <script>
 
+
+    </script>
   
 </body>
 </html>
