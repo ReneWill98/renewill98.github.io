@@ -49,10 +49,11 @@
         }
 
         .custom-menu-item {
-            font-family: 'Lato', sans-serif !important; 
-            color: #292929!important; 
+            font-family: "Roboto", sans-serif !important; 
+           
+            color: #181818!important; 
             font-size: 20px !important;
-            font-weight: 700 !important;
+            font-weight: 500 !important;
             filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.1));
         }
 
@@ -225,6 +226,18 @@
                 transform: translateX(-100%); /* Startposition des Bildes (rechts außerhalb des Containers) */
             }
         }
+
+        
+        .uk-navbar-dropdown{
+            top: 50px !important;
+            left: 70% !important;
+            background: rgb(18, 171, 252)!important;
+            box-shadow: none !important;
+            
+          
+        }
+
+        
     </style>
 </head>
 <body>
@@ -244,17 +257,18 @@
                     <div class="uk-navbar-right uk-visible@s" style="margin-right: 30px;">
                         <ul class="uk-navbar-nav" >
                             <!-- <li><a class="custom-menu-item" href="#">Home</a></li> -->
-                            <li><a class="custom-menu-item" href="#tutorials">Über Uns</a></li>
-                            <li><a class="custom-menu-item" href="#contact" style="margin-right: 10px;">Kontakt</a></li>
+                            <li><a class="custom-menu-item" href="#aboutus">Über Uns</a></li>
+                            <li><a class="custom-menu-item" href="#contact">Kontakt</a></li>
                             <!-- <li></li><a class="uk-navbar-item navbar-spacer"></a></li> -->
                         </ul>
                     </div>
                     <div class="uk-navbar-right uk-hidden@s" style="margin-right: 15px;">
                         <a class="uk-navbar-toggle" style="color: #1f1f1f;" uk-icon="icon: menu; ratio: 1.8"></a>
+                        
                         <div class="uk-navbar-dropdown">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li class="custom-menu-item"><a href="#aboutus">Über Uns</a></li>
-                                <li class="custom-menu-item"><a href="#contact">Kontakt</a></li>
+                                <li ><a class="custom-menu-item" href="#aboutus">Über Uns</a></li>
+                                <li ><a class="custom-menu-item" href="#contact">Kontakt</a></li>
                             </ul>
                         </div>
                     </div>
