@@ -1,156 +1,136 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/uikit@3.19.2/dist/css/uikit.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.2/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.2/dist/js/uikit-icons.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
 
-    <title>Contact</title>
-  </head>
-  <style>
-    .kleinanzeigen-icon {
-	
-      min-width: 120px !important;
-      max-width: 120px !important;
-      
-    }
-    .facebook-icon {
-      min-width: 53px !important;
-      max-width: 53px !important;
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.19.2/dist/css/uikit.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.2/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.2/dist/js/uikit-icons.min.js"></script>
 
-    }
-    .insta-icon {
-      min-width: 53px !important;
-      max-width: 52px !important;
-    }
+  <title>Contact</title>
+</head>
+<style>
+  .container {
+        position: relative;
+      }
 
-    .logo-container {
-      display: flex; /* Macht den Container zu einem Flex-Container */
-      justify-content: center; /* Zentriert die Kinder horizontal */
-      align-items: center; /* Zentriert die Kinder vertikal */
-      min-height: 106px; /* Mindesthöhe des Containers */
-	  
+  .kleinanzeigen-icon {
+
+    min-width: 120px !important;
+    max-width: 120px !important;
+
+  }
+
+  .facebook-icon {
+    min-width: 53px !important;
+    max-width: 53px !important;
+
+  }
+
+  .insta-icon {
+    min-width: 53px !important;
+    max-width: 52px !important;
+  }
+
+  .logo-container {
+    display: flex;
+    /* Macht den Container zu einem Flex-Container */
+    justify-content: center;
+    /* Zentriert die Kinder horizontal */
+    align-items: center;
+    /* Zentriert die Kinder vertikal */
+    min-height: 106px;
+    /* Mindesthöhe des Containers */
 
 
-    }
+
+  }
+
+  .custom-label {
+    width: 100%;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    overflow: hidden;
+    font-weight: 700;
+  }
+
+  .contact {
+    cursor: pointer;
+    min-width: 144px !important;
 
 
 
-    .custom-label {
-      width: 100%;
-      -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-      hyphens: auto;
-      overflow: hidden;
-      font-weight: 700;
-    }
+  }
+</style>
 
-    .contact {
-      cursor: pointer;
-	  min-width: 144px !important;
-	  
-	 
-
-    }
-  </style>
-
-  <body>
+<body>
+  <div class="container">
     <h2>Kontakt</h2>
     <div onclick="window.open('https://www.kleinanzeigen.de/s-bestandsliste.html?userId=139086288','_blank')"
-      class="uk-child-width-expand@m uk-text-center"
-      uk-grid
-      style="padding-left: 20px; padding-right: 20px"
-    >
+      class="uk-child-width-expand@m uk-text-center" uk-grid style="padding-left: 20px; padding-right: 20px">
       <div>
-        <div
-          class="contact uk-card uk-card-default uk-card-small uk-card-body"
-          uk-margin
-        >
+        <div class="contact uk-card uk-card-default uk-card-small uk-card-body" uk-margin>
           <div class="logo-container">
-            
-              <img
-                class="kleinanzeigen-icon"
-                src="img/ka_vertical_lightgreen_rgb.png"
-                alt="kleinanzeigen logo"
-              />
-           
+
+            <img class="kleinanzeigen-icon" src="img/ka_vertical_lightgreen_rgb.png" alt="kleinanzeigen logo" />
+
           </div>
 
           <div class="uk-visible@s">
             Betrachten sie unsere Hüpfburgen unter Kleinanzeigen.
           </div>
 
-		  <div class="custom-label">Huepfhelden Rostock</div>
+          <div class="custom-label">Huepfhelden Rostock</div>
         </div>
       </div>
       <div>
         <div onclick="window.open('https://www.facebook.com/people/HuepfHelden-Rostock/61557486091195','_blank')"
-          class="contact uk-card uk-card-default uk-card-small uk-card-body"
-          uk-margin
-        >
+          class="contact uk-card uk-card-default uk-card-small uk-card-body" uk-margin>
           <div class="logo-container">
-           
-              <img
-                class="facebook-icon"
-                src="img/Facebook_Logo_Primary.png"
-                alt="facebook logo"
-              />
-           
+
+            <img class="facebook-icon" src="img/Facebook_Logo_Primary.png" alt="facebook logo" />
+
           </div>
           <div class="uk-visible@s">
             Kontaktieren Sie uns gerne auch über facebook.
           </div>
 
-		  <div class="custom-label">HuepfHelden-Rostock</div>
+          <div class="custom-label">HuepfHelden-Rostock</div>
         </div>
       </div>
       <div>
-        <div onclick="window.open('https://www.instagram.com/huepfhelden_rostock?igsh=emx6d3lzam05OGZv&utm_source=qr','_blank')"
-          class="contact uk-card uk-card-default uk-card-small uk-card-body"
-          uk-margin
-        >
+        <div
+          onclick="window.open('https://www.instagram.com/huepfhelden_rostock?igsh=emx6d3lzam05OGZv&utm_source=qr','_blank')"
+          class="contact uk-card uk-card-default uk-card-small uk-card-body" uk-margin>
           <div class="logo-container">
-           
-			<div class="logo-container">
-				<img
-                class="insta-icon"
-                src="img/Instagram_Glyph_Gradient.png"
-                alt="insta logo"
-              />
-			</div>
-             
-            
+
+            <div class="logo-container">
+              <img class="insta-icon" src="img/Instagram_Glyph_Gradient.png" alt="insta logo" />
+            </div>
+
+
           </div>
           <div class="uk-visible@s">Folgt uns auf Instagram</div>
 
-		  <div class="custom-label">@huepfhelden_rostock</div>
-          
+          <div class="custom-label">@huepfhelden_rostock</div>
+
         </div>
       </div>
 
       <div>
         <div onclick="window.location.href = 'mailto:info@huepfhelden-rostock.de'"
-          class="contact uk-card uk-card-default uk-card-small uk-card-body"
-          uk-margin
-        >
+          class="contact uk-card uk-card-default uk-card-small uk-card-body" uk-margin>
           <div class="logo-container">
             <i class="fa fa-envelope fa-3x w-full"></i>
           </div>
@@ -159,21 +139,17 @@
         </div>
       </div>
 
-	  <div>
+      <div>
         <div onclick="window.location.href = 'mailto:info@huepfhelden-rostock.de'"
-          class="contact uk-card uk-card-default uk-card-small uk-card-body"
-          uk-margin
-        >
+          class="contact uk-card uk-card-default uk-card-small uk-card-body" uk-margin>
           <div class="logo-container">
             <i class="fa fa-phone-square fa-3x w-full"></i>
           </div>
           <div class="uk-visible@s">Oder rufen sie uns direkt an.</div>
-		  <div class="custom-label">+49 1520 3353648</div>
+          <div class="custom-label">+49 1520 3353648</div>
         </div>
       </div>
-	  
+    </div>
+</body>
 
-    
-    
-  </body>
 </html>

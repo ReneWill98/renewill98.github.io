@@ -1,302 +1,331 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Home</title>
     <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/css/uikit.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/css/uikit.min.css"
+    />
     <!-- UIkit JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/js/uikit-icons.min.js"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        .custom-navbar {
-            
-            background: rgb(18, 171, 252)!important;
+      .custom-navbar {
+        background: rgb(18, 171, 252) !important;
+      }
 
+      .custom-logo-img {
+        width: 100px;
+        height: 100px;
+      }
+      .custom-logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
 
-            
-        }
+        filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5));
+      }
+      .shadow {
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+      }
 
-        .custom-logo-img {
-            width: 100px;
-            height: 100px;
-        }
-        .custom-logo {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-          
-            filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5));
-        }
-        .shadow {
-            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+      .custom-website-name {
+        color: #2e2e2e !important;
+        font-size: 40px !important;
+        font-family: "Lato", sans-serif !important;
+        font-weight: 700 !important;
 
-        }
+        filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.1));
+      }
 
-        .custom-website-name {
-            color: #2e2e2e !important; 
-            font-size: 40px !important;
-            font-family: 'Lato', sans-serif !important; 
-            font-weight: 700 !important;
-            
-            filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.1));
-;
-            
-        }
+      .custom-menu-item {
+        font-family: "Roboto", sans-serif !important;
 
-        .custom-menu-item {
-            font-family: "Roboto", sans-serif !important; 
-           
-            color: #181818!important; 
-            font-size: 20px !important;
-            font-weight: 500 !important;
-            filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.1));
-        }
+        color: #181818 !important;
+        font-size: 20px !important;
+        font-weight: 500 !important;
+        filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.1));
+      }
 
-        .navbar-spacer {
-            margin-right: 110px;
-        }
-        .roulette-container{
-            
-            width: 100%;
+      .navbar-spacer {
+        margin-right: 110px;
+      }
+      .roulette-container {
+        width: 100%;
 
-           
-            display: flex; /* Macht den Container zu einem Flex-Container */
-            justify-content: center; /* Zentriert die Kinder horizontal */
-            align-items: center; /* Zentriert die Kinder vertikal */
-    
-        }
+        display: flex; /* Macht den Container zu einem Flex-Container */
+        justify-content: center; /* Zentriert die Kinder horizontal */
+        align-items: center; /* Zentriert die Kinder vertikal */
+      }
 
-        .roulette-images {
-            display: flex;
-            position: relative;
-            width: 100%; /* oder Ihre bevorzugte Breite */
-             /* oder Ihre bevorzugte Höhe */
-            background-color: #202020;
-            overflow: hidden;
-            aspect-ratio: 4.5/1;
-           
-        }
+      .roulette-images {
+        display: flex;
+        position: relative;
+        width: 100%; /* oder Ihre bevorzugte Breite */
+        /* oder Ihre bevorzugte Höhe */
+        background-color: #202020;
+        overflow: hidden;
+        aspect-ratio: 4.5/1;
+      }
 
-
-
-        .roulette-images img {
-            position: absolute;
-            top: 0 ;
-            left: 34% ;
-            width: 34% ; /* Bilder nehmen die volle Breite des Containers ein */
-            height: auto ;
-        }
-        @media screen and (max-width: 640px) {
-            .roulette-images > img {
-            position: absolute ;
-            top: 0 ;
-            left: 0% !important ;
-            width: 100% !important; /* Bilder nehmen die volle Breite des Containers ein */
-            height: auto ;
-            
-
+      .roulette-images img {
+        position: absolute;
+        top: 0;
+        left: 34%;
+        width: 34%; /* Bilder nehmen die volle Breite des Containers ein */
+        height: auto;
+      }
+      @media screen and (max-width: 640px) {
+        .roulette-images > img {
+          position: absolute;
+          top: 0;
+          left: 0% !important ;
+          width: 100% !important; /* Bilder nehmen die volle Breite des Containers ein */
+          height: auto;
         }
         .roulette-images {
-            aspect-ratio: 1.5/1 !important;
+          aspect-ratio: 1.5/1 !important;
         }
+      }
 
-        }
+      .show-1 {
+        z-index: 5 !important;
+        transform: translateX(100%);
+        filter: blur(10px) !important;
+        animation: slideIn1 2s ease;
+      }
+      .show-2 {
+        z-index: 5 !important;
+        filter: blur(0px);
+        transform: translateX(0%);
 
-      
-      
+        animation: slideIn2 2s ease, blurOFF 2s ease;
+      }
+      .show-3 {
+        z-index: 5 !important;
 
-        .show-1{
-            z-index: 5 !important;
-            transform: translateX(100%);
-            filter: blur(10px) !important;
-            animation: slideIn1 2s ease;
-            
-        }
-        .show-2{
-            z-index: 5 !important;
-            filter: blur(0px);
-            transform: translateX(0%);
-            
-            animation: slideIn2 2s ease, blurOFF 2s ease;
-        
-        }
-        .show-3{
-            z-index: 5 !important;
-            
-            transform: translateX(-100%);
-            animation: slideIn3 2s ease, blurON 2s ease;
-            filter: blur(10px);
-           
-        }
-        .show-4 {
-            z-index: 5 !important;
-            transform: translateX(-200%);
-            animation: slideIn4 2s ease;
-            filter: blur(10px) !important;
-        }
-        .start-right {
-            transform: translateX(100%);
-        }
-        .start-left {
-            transform: translateX(-100%);
-        }
+        transform: translateX(-100%);
+        animation: slideIn3 2s ease, blurON 2s ease;
+        filter: blur(10px);
+      }
+      .show-4 {
+        z-index: 5 !important;
+        transform: translateX(-200%);
+        animation: slideIn4 2s ease;
+        filter: blur(10px) !important;
+      }
+      .start-right {
+        transform: translateX(100%);
+      }
+      .start-left {
+        transform: translateX(-100%);
+      }
 
-        @keyframes blurON {
-            0% {
-                filter: blur(0px); /* Startposition des Bildes (rechts außerhalb des Containers) */
-            }
-            100% {
-                filter: blur(10px); /* Startposition des Bildes (rechts außerhalb des Containers) */
-            }
+      @keyframes blurON {
+        0% {
+          filter: blur(
+            0px
+          ); /* Startposition des Bildes (rechts außerhalb des Containers) */
         }
-
-        @keyframes blurOFF {
-            0% {
-                filter: blur(10px); /* Startposition des Bildes (rechts außerhalb des Containers) */
-            }
-            100% {
-                filter: blur(0px); /* Startposition des Bildes (rechts außerhalb des Containers) */
-            }
+        100% {
+          filter: blur(
+            10px
+          ); /* Startposition des Bildes (rechts außerhalb des Containers) */
         }
+      }
 
-
-        
-
-        @keyframes slideIn1 {
-            0% {
-                transform: translateX(200%); /* Startposition des Bildes (rechts außerhalb des Containers) */
-            }
-            100% {
-                transform: translateX(100%); /* Startposition des Bildes (rechts außerhalb des Containers) */
-            }
+      @keyframes blurOFF {
+        0% {
+          filter: blur(
+            10px
+          ); /* Startposition des Bildes (rechts außerhalb des Containers) */
         }
-
-        @keyframes slideIn2 {
-            0% {
-                transform: translateX(100%); /* Startposition des Bildes (rechts außerhalb des Containers) */
-               
-            }
-            100% {
-                transform: translateX(0%); /* Startposition des Bildes (rechts außerhalb des Containers) */
-               
-            }
+        100% {
+          filter: blur(
+            0px
+          ); /* Startposition des Bildes (rechts außerhalb des Containers) */
         }
-        @keyframes slideIn3 {
-            0% {
-                transform: translateX(0%); /* Startposition des Bildes (rechts außerhalb des Containers) */
-                
-            }
-            100% {
-                transform: translateX(-100%); /* Startposition des Bildes (rechts außerhalb des Containers) */
-              
-            }
+      }
+
+      @keyframes slideIn1 {
+        0% {
+          transform: translateX(
+            200%
+          ); /* Startposition des Bildes (rechts außerhalb des Containers) */
         }
-
-        @keyframes slideIn4{
-            
-            0% {
-                transform: translateX(-100%); /* Startposition des Bildes (rechts außerhalb des Containers) */
-            }
-            100% {
-                transform: translateX(-200%); /* Startposition des Bildes (rechts außerhalb des Containers) */
-            }
+        100% {
+          transform: translateX(
+            100%
+          ); /* Startposition des Bildes (rechts außerhalb des Containers) */
         }
+      }
 
-        
-
-        @keyframes slideIn {
-            0% {
-                transform: translateX(100%); /* Startposition des Bildes (rechts außerhalb des Containers) */
-            }
-            100% {
-                transform: translateX(0%); /* Startposition des Bildes (rechts außerhalb des Containers) */
-            }
+      @keyframes slideIn2 {
+        0% {
+          transform: translateX(
+            100%
+          ); /* Startposition des Bildes (rechts außerhalb des Containers) */
         }
-
-        @keyframes slideOut {
-            0% {
-                transform: translateX(0%); /* Startposition des Bildes (rechts außerhalb des Containers) */
-            }
-            100% {
-                transform: translateX(-100%); /* Startposition des Bildes (rechts außerhalb des Containers) */
-            }
+        100% {
+          transform: translateX(
+            0%
+          ); /* Startposition des Bildes (rechts außerhalb des Containers) */
         }
-
-        
-        .uk-navbar-dropdown{
-            top: 50px !important;
-            left: 70% !important;
-            background: rgb(18, 171, 252)!important;
-            box-shadow: none !important;
-            
-          
+      }
+      @keyframes slideIn3 {
+        0% {
+          transform: translateX(
+            0%
+          ); /* Startposition des Bildes (rechts außerhalb des Containers) */
         }
+        100% {
+          transform: translateX(
+            -100%
+          ); /* Startposition des Bildes (rechts außerhalb des Containers) */
+        }
+      }
 
-        
+      @keyframes slideIn4 {
+        0% {
+          transform: translateX(
+            -100%
+          ); /* Startposition des Bildes (rechts außerhalb des Containers) */
+        }
+        100% {
+          transform: translateX(
+            -200%
+          ); /* Startposition des Bildes (rechts außerhalb des Containers) */
+        }
+      }
+
+      @keyframes slideIn {
+        0% {
+          transform: translateX(
+            100%
+          ); /* Startposition des Bildes (rechts außerhalb des Containers) */
+        }
+        100% {
+          transform: translateX(
+            0%
+          ); /* Startposition des Bildes (rechts außerhalb des Containers) */
+        }
+      }
+
+      @keyframes slideOut {
+        0% {
+          transform: translateX(
+            0%
+          ); /* Startposition des Bildes (rechts außerhalb des Containers) */
+        }
+        100% {
+          transform: translateX(
+            -100%
+          ); /* Startposition des Bildes (rechts außerhalb des Containers) */
+        }
+      }
+
+      .uk-navbar-dropdown {
+        top: 50px !important;
+        left: 70% !important;
+        background: rgb(18, 171, 252) !important;
+        box-shadow: none !important;
+      }
     </style>
-</head>
-<body>
-    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; end: + *; offset: 0" class="shadow">
-        <nav class="uk-navbar-container custom-navbar">
-            <div class="uk-container uk-width-expand">
-                <div uk-navbar>
-                    <div class="uk-navbar-left">
-                        <ul class="uk-navbar-nav">
-                            <a class="uk-navbar-item navbar-spacer" href="#"></a>
-                            <a class="uk-navbar-item uk-logo custom-logo" href="#">
-                                <img class="custom-logo-img" src="img/huepfburg_bearbeitet.png">
-                            </a>
-                            <li><a class="custom-website-name uk-visible@s" href="#">Hüpfhelden</a></li>
-                        </ul>
-                    </div>
-                    <div class="uk-navbar-right uk-visible@s" style="margin-right: 30px;">
-                        <ul class="uk-navbar-nav" >
-                            <!-- <li><a class="custom-menu-item" href="#">Home</a></li> -->
-                            <li><a class="custom-menu-item" href="#aboutus">Über Uns</a></li>
-                            <li><a class="custom-menu-item" href="#contact">Kontakt</a></li>
-                            <!-- <li></li><a class="uk-navbar-item navbar-spacer"></a></li> -->
-                        </ul>
-                    </div>
-                    <div class="uk-navbar-right uk-hidden@s" style="margin-right: 15px;">
-                        <a class="uk-navbar-toggle" style="color: #1f1f1f;" uk-icon="icon: menu; ratio: 1.8"></a>
-                        
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li ><a class="custom-menu-item" href="#aboutus">Über Uns</a></li>
-                                <li ><a class="custom-menu-item" href="#contact">Kontakt</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+  </head>
+  <body>
+    <div
+      uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; end: + *; offset: 0"
+      class="shadow"
+    >
+      <nav class="uk-navbar-container custom-navbar">
+        <div class="uk-container uk-width-expand">
+          <div uk-navbar>
+            <div class="uk-navbar-left">
+              <ul class="uk-navbar-nav">
+                <a class="uk-navbar-item navbar-spacer" href="#"></a>
+                <a class="uk-navbar-item uk-logo custom-logo" href="#">
+                  <img
+                    class="custom-logo-img"
+                    src="img/huepfburg_bearbeitet.png"
+                  />
+                </a>
+                <li>
+                  <a class="custom-website-name uk-visible@s" href="#"
+                    >Hüpfhelden</a
+                  >
+                </li>
+              </ul>
             </div>
-        </nav>
+            <div
+              class="uk-navbar-right uk-visible@s"
+              style="margin-right: 30px"
+            >
+              <ul class="uk-navbar-nav">
+                <!-- <li><a class="custom-menu-item" href="#">Home</a></li> -->
+                <li>
+                  <a class="custom-menu-item" href="#aboutus">Über Uns</a>
+                </li>
+                <li><a class="custom-menu-item" href="#contact">Kontakt</a></li>
+                <!-- <li></li><a class="uk-navbar-item navbar-spacer"></a></li> -->
+              </ul>
+            </div>
+            <div class="uk-navbar-right uk-hidden@s" style="margin-right: 15px">
+              <a
+                class="uk-navbar-toggle"
+                style="color: #1f1f1f"
+                uk-icon="icon: menu; ratio: 1.8"
+              ></a>
+
+              <div class="uk-navbar-dropdown">
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li>
+                    <a class="custom-menu-item" href="#aboutus">Über Uns</a>
+                  </li>
+                  <li>
+                    <a class="custom-menu-item" href="#contact">Kontakt</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
-    
-    
+
     <div class="roulette-container">
-        <div class="roulette-images">
-         
-            <img src="img/optimized/IMG_1693.webp" alt="Bild 1">
-            <img class="start start-right" src="img/optimized/IMG_1768.webp" alt="Bild 2" >
-            <img class="start start-middle"src="img/optimized/IMG_1819.webp" alt="Bild 3">
-            <img class="start start-left" src="img/optimized/IMG_1768.webp" alt="Bild 1">
-          
-    </div>
+      <div class="roulette-images">
+        <img src="img/optimized/IMG_1693.webp" alt="Bild 1" />
+        <img
+          class="start start-right"
+          src="img/optimized/IMG_1768.webp"
+          alt="Bild 2"
+        />
+        <img
+          class="start start-middle"
+          src="img/optimized/IMG_1819.webp"
+          alt="Bild 3"
+        />
+        <img
+          class="start start-left"
+          src="img/optimized/IMG_1768.webp"
+          alt="Bild 1"
+        />
+      </div>
     </div>
     <!--
     <div class="uk-height-large uk-background-cover uk-background-center-center" style="background-image: url('img/background.jpg');">
         
     </div>
     -->
-    <script>
-
-
-    </script>
-  
-</body>
+    <script></script>
+  </body>
 </html>

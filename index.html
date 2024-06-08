@@ -1,99 +1,96 @@
 <!DOCTYPE html>
 <html lang="de">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
     <title>Hüpfhelden Rostock</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon//favicon-16x16.png">
-    <link rel="manifest" href="favicon//site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon//favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon//site.webmanifest" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/css/uikit.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/css/uikit.min.css"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/js/uikit-icons.min.js"></script>
-    <script src="components.js"> </script>
-    <script src="image_roulette copy.js"> </script>
+    <script src="components.js"></script>
+    <script src="image_roulette copy.js"></script>
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
+      html {
+        scroll-behavior: smooth;
+      }
 
-        body {
-            font-family: "Roboto", sans-serif;
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            padding: 0; /* Entfernt den Standard-Padding des Body-Tags */
-            width: 100vw; /* Setzt die Breite des Body-Tags auf 100% der Viewport-Breite */
-            max-width: 100%; /* Begrenzt die maximale Breite auf die Breite des Bildschirms */
-            overflow-x: hidden; /* Verhindert das horizontale Scrollen, wenn der Inhalt breiter als der Bildschirm ist */
-        }
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0; /* Entfernt den Standard-Padding des Body-Tags */
+        width: 100vw; /* Setzt die Breite des Body-Tags auf 100% der Viewport-Breite */
+        max-width: 100%; /* Begrenzt die maximale Breite auf die Breite des Bildschirms */
+        overflow-x: hidden; /* Verhindert das horizontale Scrollen, wenn der Inhalt breiter als der Bildschirm ist */
+      }
 
-        .header-image {
-            width: 100%;
-            height: 100vh;
-            object-fit: cover;
-            filter: brightness(130%)
-        }
+      .header-image {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        filter: brightness(130%);
+      }
 
-        .info-text {
-            width: 100%;
-            padding: 0px 100px;
-        }
+      .info-text {
+        width: 100%;
+        padding: 0px 100px;
+      }
 
-        h2 {
-            text-align: center;
-            font-size: 50px;
-            
-            font-family: 'Roboto', sans-serif !important; 
-            font-weight: 700 !important;
-            color: #353535 !important;
-       
-        }
+      h2 {
+        text-align: center;
+        font-size: 50px;
 
-        
-       
-
- 
-
-    
-
+        font-family: "Roboto", sans-serif !important;
+        font-weight: 700 !important;
+        color: #353535 !important;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-   
-    <div id="home">
-    </div>
+  <body>
+    <div id="home" class="uk-margin"></div>
 
-    <div id="tutorials">
-        
-    </div>
+    <div id="explanation" class="uk-margin"></div>
 
-    <div id="catalog">
-        
-    </div>
+    <div id="aboutus" class="uk-margin"></div>
 
-    <div id="contact" class="uk-margin">
+    <div id="contact" class="uk-margin"></div>
 
-    </div>
-    
     <script>
-        loadComponents();
-
-
-       
-
-        
-
-
+      loadComponents();
     </script>
-</body>
-
+  </body>
 </html>
