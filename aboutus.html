@@ -22,10 +22,22 @@
       .container {
         position: relative;
       }
-      .aboutus-image {
-        position: relative;
-        width: 50%;
-        left: 25%;
+      .text-container {
+        display: flex;
+        flex-direction: column;
+        
+        row-gap: 200px;
+
+        height: 1200px;
+      }
+      .aboutus-text {
+        padding-top: 20px;
+        width: 60%;
+        font-family: "Roboto", sans-serif !important;
+
+        color: #000000 !important;
+        font-size: 20px !important;
+        font-weight: 300 !important;
       }
     </style>
   </head>
@@ -38,39 +50,38 @@
           class="text-container uk-background-fixed uk-background-center-center uk-width-full"
           style="background-image: url(img/IMG_5847_bearbeitet2.jpg)"
         >
-          <div class="aboutus-text">
-            <div class="uk-card uk-card-default uk-card-body">
-              <p class="uk-text-center uk-width-auto">
-                Leider ist unsere Website noch in Arbeit und einige Funktionen sind noch
-                nicht enthalten, dazu zählt das Buchen von unseren Hüpfburgen, unser
-                Preiskatalog und viele mehr. Unsere zuvermietenden Hüpfburgen mit den
-                Preisen können sie sich unter unserem Kleinanzeigen-Kontakt anschauen
-                oder sie kontaktieren uns direkt über eins der untenstehenden Portale.
-              </p>
-            </div>
+          <div class="aboutus-text uk-card uk-card-default uk-card-body"
+          style="align-self: center; margin-top: 50px;">
+            <p class="uk-text-center uk-width-auto">
+              Willkommen bei Hüpfhelden-Rostock!
+            </p>
+            <p class="uk-text-center uk-width-auto">
+              Wir sind Sandro Haase und Karsten Mühmer.
+            </p>
+          </div>
+          <div class="aboutus-text uk-card uk-card-default uk-card-body">
+            <p class="uk-text-center uk-width-auto">
+              Mit unseren Hüpfburgen wird jede Party zu einem Erlebnis. Wir
+              haben es uns zur Aufgabe gemacht, Freude auf alle Veranstaltungen
+              und Feste unserer Kunden zu bringen. Mit einem Fokus auf Qualität,
+              Sicherheit und Kundenzufriedenheit bieten wir eine Auswahl von
+              bisher zwei Hüpfburgen an.
+            </p>
+          </div>
+          <div class="aboutus-text uk-card uk-card-default uk-card-body"
+          style="align-self: flex-end;">
+            <p class="uk-text-center uk-width-auto">
+              Egal, ob es sich um einen Kindergeburtstag, eine Firmenfeier, ein
+              Schulfest oder ein öffentliches Event handelt, wir haben die
+              perfekte Hüpfburg für Sie. Bei jeder Buchung besteht die
+              Möglichkeit, auf individuelle Wünsche einzugehen. Wir freuen uns
+              darauf, auch Ihre Veranstaltung zu etwas Besonderem zu machen.
+              Kontaktieren Sie uns noch heute, um Ihre Hüpfburg-Träume wahr
+              werden zu lassen!
+            </p>
           </div>
         </div>
       </div>
     </div>
-
-    <style>
-      .text-container {
-        display: flex;
-        justify-content: center;
-        
-        height: 600px;
-       
-      }
-      .aboutus-text {
-        padding-top: 20px;
-        width: 60%;
-        font-family: "Roboto", sans-serif !important;
-
-        color: #000000 !important;
-        font-size: 20px !important;
-        font-weight: 300 !important;
-
-      }
-    </style>
   </body>
 </html>
