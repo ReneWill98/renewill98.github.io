@@ -23,15 +23,14 @@
         position: relative;
       }
       .text-container {
+        padding-top: 20px;
+        padding-bottom: 80px;
         display: flex;
         flex-direction: column;
-        
-        row-gap: 200px;
 
-        height: 1200px;
+        row-gap: 200px;
       }
       .aboutus-text {
-        padding-top: 20px;
         width: 60%;
         font-family: "Roboto", sans-serif !important;
 
@@ -47,11 +46,13 @@
       <h2>Über uns</h2>
       <div>
         <div
-          class="text-container uk-background-fixed uk-background-center-center uk-width-full"
+          class="uk-visible@s text-container uk-background-fixed uk-background-center-center uk-width-full"
           style="background-image: url(img/IMG_5847_bearbeitet2.jpg)"
         >
-          <div class="aboutus-text uk-card uk-card-default uk-card-body"
-          style="align-self: center; margin-top: 50px;">
+          <div
+            class="aboutus-text uk-card uk-card-default uk-card-body"
+            style="align-self: center; margin-top: 50px"
+          >
             <p class="uk-text-center uk-width-auto">
               Willkommen bei Hüpfhelden-Rostock!
             </p>
@@ -68,8 +69,10 @@
               bisher zwei Hüpfburgen an.
             </p>
           </div>
-          <div class="aboutus-text uk-card uk-card-default uk-card-body"
-          style="align-self: flex-end;">
+          <div
+            class="aboutus-text uk-card uk-card-default uk-card-body"
+            style="align-self: flex-end"
+          >
             <p class="uk-text-center uk-width-auto">
               Egal, ob es sich um einen Kindergeburtstag, eine Firmenfeier, ein
               Schulfest oder ein öffentliches Event handelt, wir haben die
@@ -81,6 +84,10 @@
             </p>
           </div>
         </div>
+        <div
+          class="uk-hidden@s text-container uk-background-fixed uk-background-center-center uk-width-full"
+          style="background-image: url(img/IMG_5847_bearbeitet2.jpg)"
+        ></div>
       </div>
     </div>
   </body>
