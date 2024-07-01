@@ -28,7 +28,7 @@
         display: flex;
         flex-direction: column;
 
-        row-gap: 200px;
+        row-gap: 2rem;
       }
       .background-fixed {
         position: fixed;
@@ -41,7 +41,10 @@
         z-index: -1; /* Hintergrundbild hinter den Text legen */
       }
       .aboutus-text {
-        width: 60%;
+       
+        background-color: rgba(255,255,255,.8) !important;
+        margin-inline: 2%;
+        width: 55%;
         font-family: "Roboto", sans-serif !important;
         hyphens: auto;
         text-align: justify;
@@ -52,8 +55,12 @@
       }
       @media screen and (max-width: 640px) {
         .mobile{
-          width: 100%;
+          width: 100% !important;
+          margin-inline: 0 !important ;
           font-size: 15px !important;
+        }
+        .about-us-title{
+          width: 100% !important;
         }
       }
     </style>
@@ -72,8 +79,8 @@
       ></div>
       <div class="text-container uk-width-full">
         <div
-          class="aboutus-text uk-card uk-card-default uk-card-body"
-          style="align-self: center; width: 60%"
+          class="about-us-title aboutus-text uk-card uk-card-default uk-card-body"
+          style="align-self: center; width: 40%;"
         >
           <h2>Über uns</h2>
           <p class="uk-text-center uk-width-auto">

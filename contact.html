@@ -20,8 +20,10 @@
   <title>Contact</title>
 </head>
 <style>
-  .container {
+  .contact-container {
         position: relative;
+        padding-bottom: 200px;
+        padding-top: 30px;
       }
 
   .kleinanzeigen-icon {
@@ -43,6 +45,7 @@
   }
 
   .logo-container {
+  
     display: flex;
     /* Macht den Container zu einem Flex-Container */
     justify-content: center;
@@ -55,7 +58,9 @@
 
 
   }
-
+  .contact-heading{
+    padding-bottom: 25px;
+  } 
   .custom-label {
     width: 100%;
     -webkit-hyphens: auto;
@@ -66,17 +71,22 @@
   }
 
   .contact {
+    
     cursor: pointer;
-    min-width: 144px !important;
+    min-width: 150px !important;
+   
+    height: 100%;
+  }
 
-
-
+  .uk-card{
+    background-color:  rgb(236, 248, 255) ;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   }
 </style>
 
 <body>
-  <div class="container">
-    <h2>Kontakt</h2>
+  <div class="contact-container">
+    <h2 class="contact-heading">Kontakt</h2>
     <div onclick="window.open('https://www.kleinanzeigen.de/s-bestandsliste.html?userId=139086288','_blank')"
       class="uk-child-width-expand@m uk-text-center" uk-grid style="padding-left: 20px; padding-right: 20px">
       <div>
